@@ -5,7 +5,7 @@ const Util = require('discord.js');
 
 client.on("message",async message => {
 if(message.content === '$buy'){//الامر
-let staff = message.guild.member(message.author).roles.find('name' ,"seller");
+let staff = message.guild.member(message.author).roles.find('name' ,"USER");
       if(!staff) return message.reply(`**Only Sellers | :x:**`)
 var shopc = message.guild.channels.find("name","seller")
   if(!shopc) return message.reply("لا اجد الروم المخصص للبيع")
