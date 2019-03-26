@@ -28,6 +28,42 @@ client.on('ready', () => {
   console.log('')
 });
 
+client.on("message", message => {
+if(message.author.bot) return;
+ if (message.content === prefix + "help") {
+      message.react("Ⓜ") 
+ message.channel.send("**:ballot_box_with_check: Done!**")
+  const embed = new Discord.RichEmbed()
+      .setColor("#00ff47")
+      .setThumbnail(message.author.avatarURL)
+      .setDescription(`
+__╔[❖══════❖]╗__
+**شكرا لاستخــــ:hearts:ــدام البوت**
+~~╚[❖══════❖]╝
+╔[❖══════❖]╗~~
+:crown:اوامر ادارية:crown: 
+**╚:crown:❖$bc = يرسل رسالة للكل
+╚:crown:❖$kick = لطرد عضو مع السبب 
+╚:crown:❖$ban = يسوي لك حضر للعضو
+╚:crown:❖$server = لعرض التفاصيل السيرفر
+╚:crown:❖$clear = لمسح الشات**
+╚:crown:❖$image = لفتح سورة السيرفر**
+╚:crown:❖$invite = لاضافة البوت في سيرفرك**
+╚:crown:❖$topservers = لعرض السرفرات اكبر عدد**
+╚:crown:❖**الرجاء عمل روم اسمه __الابلاغات__ لتشغيل أمر
+$Mreport
+~~╚[❖══════❖]╝
+╔[❖══════❖]╗~~
+**╚❧Support server:**
+https://discord.gg/Dknt6x
+__╚[❖══════❖]╝__
+`)
+
+
+message.author.sendEmbed(embed)
+}
+});
+
 client.on('message', msg => {
   if (msg.author.bot) return;
   if (!msg.content.startsWith(prefix)) return;
@@ -824,7 +860,7 @@ reaction2.on("collect", r => {
 
 const rWlc = {}
 client.on('message', message => {//Alpha Codes
-var prefix = "-";//البرفكس //Alpha Codes
+var prefix = "$";//البرفكس //Alpha Codes
 if(message.channel.type === "dm") return;
 if(message.author.bot) return;
    if(!rWlc[message.guild.id]) rWlc[message.guild.id] = {//Alpha Codes
