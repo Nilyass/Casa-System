@@ -873,4 +873,4 @@ if(msg.content.startsWith(`${prefix}topservers`)){ // الامر (topserver)
   msg.channel.send(serveremmbed);
 }});
 
-client.login("NTU5ODYxNTAxNDkwNjI2NTcx.D3ueAw.hM4Y_K6DKiDWrRf3zhTuGzktSUQ");
+client.login("NTU5ODU5NzEwNzE5Njg4NzI3.D3ueNA.ljhDErHybzk3Zwx0-xPmbMgsPfI");
