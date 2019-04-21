@@ -25,15 +25,7 @@ var shopc = message.guild.channels.find("name","seller")
 
      
 let desc = '';        
-e.edit("Manager Bot | مدير بووت :manager:
-
-اكتب رقم التالي :
-
-رقم 1 : لشراء بروميوم مذة شهر 1 ب 800 الف :credit_card: او 4 $ بااي باال
-
-رقم 2 : لشراء بروميوم مذة 7 ايام ب 350 الف :credit_card: او 2 $ بااي باال
-
-رقم 3 : لشراء بروميوم مذة 24 ساعة 70 الف :credit_card:").then(e => {
+e.edit("Manager Bot").then(e => {
   message.channel.awaitMessages(fillter, { time: 60000, max: 1 })
 
      .then(co => {
