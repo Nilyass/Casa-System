@@ -25,7 +25,7 @@ var shopc = message.guild.channels.find("name","seller")
 
      
 let desc = '';        
-e.edit(":Managerpremuim").then(e => {
+e.edit(":Managerpremuim:").then(e => {
   message.channel.awaitMessages(fillter, { time: 60000, max: 1 })
 
      .then(co => {
