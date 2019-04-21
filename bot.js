@@ -1,10 +1,10 @@
 ﻿const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "$"
+const prefix = "M"
 const Util = require('discord.js');
 
 client.on("message",async message => {
-if(message.content === '$buy'){//الامر
+if(message.content === 'Mbuy'){//الامر
 let staff = message.guild.member(message.author).roles.find('name' ,"@everyone");
       if(!staff) return message.reply(`**Only Sellers | :x:**`)
 var shopc = message.guild.channels.find("name","seller")
@@ -14,7 +14,7 @@ var shopc = message.guild.channels.find("name","seller")
       
      
 
-      await message.channel.send("اكتب الاشياء الذي سوف تشتريها").then(e => {
+      await message.channel.send("هل تريد شراء نصخة البووت بروميوم ؟").then(e => {
            message.channel.awaitMessages(fillter, { time: 60000, max: 1   
 
 })
@@ -25,7 +25,7 @@ var shopc = message.guild.channels.find("name","seller")
 
      
 let desc = '';        
-e.edit("كم سعرك؟").then(e => {
+e.edit("نسخة Manager  بووت بروميوم :او 1$ بااي باال مذة شهرة  1 ب 800الف او 4$ بااي باال: مذة 7ايام ب300 الف او 2$ بااي باال : مذة 24 ساعة ب 150 الف").then(e => {
   message.channel.awaitMessages(fillter, { time: 60000, max: 1 })
 
      .then(co => {
@@ -41,7 +41,7 @@ ${shop}
 ======================
 ** الدفع ب كريديت برو بوت فقط **
 ======================
-**السعر المشتري:** **${desc}**
+**يريد شراء بروميوم:** **${desc}**
 ======================
 
 **تم الارسال بواسطة:** ${message.author}
