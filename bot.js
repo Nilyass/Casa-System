@@ -25,7 +25,7 @@ var shopc = message.guild.channels.find("name","seller")
 
      
 let desc = '';        
-e.edit("نسخة Manager  بووت بروميوم :او 1$ بااي باال مذة شهرة  1 ب 800الف او 4$ بااي باال: مذة 7ايام ب300 الف او 2$ بااي باال : مذة 24 ساعة ب 150 الف").then(e => {
+e.edit(":Managerpremuim").then(e => {
   message.channel.awaitMessages(fillter, { time: 60000, max: 1 })
 
      .then(co => {
