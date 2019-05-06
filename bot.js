@@ -25,7 +25,7 @@ var shopc = message.guild.channels.find("name","js")
 
      
 let desc = '';        
-e.edit("Bot -js").then(e => {
+e.edit("وصف الكوود ؟").then(e => {
   message.channel.awaitMessages(fillter, { time: 60000, max: 1 })
 
      .then(co => {
@@ -39,9 +39,13 @@ ${message.guild.name}:tm: -js :arrow_down:
 ======================
 ${shop}
 ======================
+
 ** كوود جديد **
+
 ======================
+
 **كوود js:** **${desc}**
+
 ======================
 
 **صانع الكوود:** ${message.author}
