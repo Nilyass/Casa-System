@@ -7,7 +7,7 @@ client.on("message",async message => {
 if(message.content === '-js'){//الامر
 let staff = message.guild.member(message.author).roles.find('name' ,"@everyone");
       if(!staff) return message.reply(`**Only codes | :x:**`)
-var shopc = message.guild.channels.find("name","seller")
+var shopc = message.guild.channels.find("name","js codes")
   if(!shopc) return message.reply("لا اجد الروم المخصص")
     let shop = '';
       let fillter = m => m.author.id === message.author.id
