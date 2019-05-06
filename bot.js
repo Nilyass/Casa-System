@@ -1,20 +1,20 @@
 ﻿const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "M"
+const prefix = "-"
 const Util = require('discord.js');
 
 client.on("message",async message => {
-if(message.content === 'Mbuy'){//الامر
+if(message.content === '-js'){//الامر
 let staff = message.guild.member(message.author).roles.find('name' ,"@everyone");
-      if(!staff) return message.reply(`**Only Sellers | :x:**`)
+      if(!staff) return message.reply(`**Only codes | :x:**`)
 var shopc = message.guild.channels.find("name","seller")
-  if(!shopc) return message.reply("لا اجد الروم المخصص للبيع")
+  if(!shopc) return message.reply("لا اجد الروم المخصص")
     let shop = '';
       let fillter = m => m.author.id === message.author.id
       
      
 
-      await message.channel.send("هل تريد شراء نصخة البووت بروميوم ؟").then(e => {
+      await message.channel.send("اكتب الكوود ؟").then(e => {
            message.channel.awaitMessages(fillter, { time: 60000, max: 1   
 
 })
@@ -25,7 +25,7 @@ var shopc = message.guild.channels.find("name","seller")
 
      
 let desc = '';        
-e.edit("Manager Bot").then(e => {
+e.edit("Bot -js").then(e => {
   message.channel.awaitMessages(fillter, { time: 60000, max: 1 })
 
      .then(co => {
@@ -33,18 +33,18 @@ e.edit("Manager Bot").then(e => {
         co.first().delete();
 
 
-e.edit("Done").then(e => {
+e.edit("تم").then(e => {
   shopc.send(`@everyone | @here
-${message.guild.name}:tm: Shop :arrow_down:
+${message.guild.name}:tm: -js :arrow_down:
 ======================
 ${shop}
 ======================
-** الدفع ب كريديت برو بوت فقط **
+** كوود جديد **
 ======================
-**يريد شراء بروميوم:** **${desc}**
+**كوود js:** **${desc}**
 ======================
 
-**تم الارسال بواسطة:** ${message.author}
+**صانع الكوود:** ${message.author}
 @everyone | @here`)
   })
 })
@@ -62,4 +62,4 @@ ${shop}
 });
 
 
-client.login("NTY1MDMyOTc5MTYwODkxNDMy.XK_8bw.7KgFQ13Q7sZ_arj5jIgXFV1DeQw");
+client.login("NTc1MDMzMDA2NzA0ODIwMjI1.XNCDPw.bcBvlDGdePk39oTklZs6qrUX1F4");
