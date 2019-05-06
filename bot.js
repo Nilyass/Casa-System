@@ -36,7 +36,8 @@ e.edit("وصف الكوود ؟").then(e => {
 e.edit("تم").then(e => {
   shopc.send(`@everyone | @here
 ${message.guild.name}:tm: -js :arrow_down:
-======================  الكوود «
+====================== 
+                : الكوود 
 
 ${shop}
 
