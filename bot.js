@@ -14,7 +14,7 @@ var shopc = message.guild.channels.find("name","report")
       
      
 
-      await message.channel.send("شنو دار لك ؟").then(e => {
+      await message.channel.send("شكون ؟").then(e => {
            message.channel.awaitMessages(fillter, { time: 60000, max: 1   
 
 })
@@ -25,7 +25,7 @@ var shopc = message.guild.channels.find("name","report")
 
      
 let desc = '';        
-e.edit("شرح علاش ؟").then(e => {
+e.edit("شنو دار لك ؟").then(e => {
   message.channel.awaitMessages(fillter, { time: 60000, max: 1 })
 
      .then(co => {
@@ -33,12 +33,12 @@ e.edit("شرح علاش ؟").then(e => {
         co.first().delete();
 
 
-e.edit("تم").then(e => {
+e.edit("Done").then(e => {
   shopc.send(`@everyone | @here
 
 ${message.guild.name}:tm: -js :arrow_down:
 ====================== 
-            المشكل :
+             المجرم :
 ${shop}
 
 ======================
@@ -47,7 +47,7 @@ ${shop}
 
 ======================
 
-**شرح المشكل:** **${desc}**
+** المشكل:** **${desc}**
 
 ======================
 
