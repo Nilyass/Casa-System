@@ -4,7 +4,7 @@ const prefix = "-"
 const Util = require('discord.js');
 
 client.on("message",async message => {
-if(message.content === '-js'){//الامر
+if(message.content === '-report'){//الامر
 let staff = message.guild.member(message.author).roles.find('name' ,"@everyone");
       if(!staff) return message.reply(`**Only codes | :x:**`)
 var shopc = message.guild.channels.find("name","js")
@@ -14,7 +14,7 @@ var shopc = message.guild.channels.find("name","js")
       
      
 
-      await message.channel.send("اكتب الكوود ؟").then(e => {
+      await message.channel.send("شنو دار لك ؟").then(e => {
            message.channel.awaitMessages(fillter, { time: 60000, max: 1   
 
 })
@@ -25,7 +25,7 @@ var shopc = message.guild.channels.find("name","js")
 
      
 let desc = '';        
-e.edit("وصف الكوود ؟").then(e => {
+e.edit("شرح علاش ؟").then(e => {
   message.channel.awaitMessages(fillter, { time: 60000, max: 1 })
 
      .then(co => {
@@ -38,20 +38,20 @@ e.edit("تم").then(e => {
 
 ${message.guild.name}:tm: -js :arrow_down:
 ====================== 
-                : الكوود 
+               : المتكي
 ${shop}
 
 ======================
 
-جميع الحقوق محفوضة لدى K,codes.
+     6flx
 
 ======================
 
-**وصف الكوود :** **${desc}**
+**المجرم:** **${desc}**
 
 ======================
 
-**صانع الكوود:** ${message.author}
+**المجرم:** ${message.author}
 @everyone | @here`)
   })
 })
