@@ -7,7 +7,7 @@ client.on("message",async message => {
 if(message.content === '-report'){//الامر
 let staff = message.guild.member(message.author).roles.find('name' ,"@everyone");
       if(!staff) return message.reply(`**Only codes | :x:**`)
-var shopc = message.guild.channels.find("name","js")
+var shopc = message.guild.channels.find("name","report")
   if(!shopc) return message.reply("لا اجد الروم المخصص")
     let shop = '';
       let fillter = m => m.author.id === message.author.id
@@ -38,7 +38,7 @@ e.edit("تم").then(e => {
 
 ${message.guild.name}:tm: -js :arrow_down:
 ====================== 
-               : المتكي
+            المشكل :
 ${shop}
 
 ======================
@@ -47,11 +47,11 @@ ${shop}
 
 ======================
 
-**المجرم:** **${desc}**
+**شرح المشكل:** **${desc}**
 
 ======================
 
-**المجرم:** ${message.author}
+**المشتكي:** ${message.author}
 @everyone | @here`)
   })
 })
