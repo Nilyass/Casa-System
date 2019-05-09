@@ -69,4 +69,4 @@ ${shop}
 });
 
 
-client.login("NTc1MDMzMDA2NzA0ODIwMjI1.XNCDPw.bcBvlDGdePk39oTklZs6qrUX1F4");
+client.login("NTc2MTAyNTkxNzE3NTcyNjEw.XNRnpQ.xMrluzea97o6wqiAUoG-AsTEuAM");
